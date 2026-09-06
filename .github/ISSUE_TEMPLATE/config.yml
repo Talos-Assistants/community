@@ -1,0 +1,19 @@
+# Issues are for defects. Everything else has a better home, and this is where that gets said.
+# The alternative is a tracker where questions and ideas bury the things that are actually broken.
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/Talos-Assistants/community/discussions/categories/q-a
+    about: How do I do X? Is this supposed to work this way? Q&A answers stay findable for the next person.
+  - name: Float a half-formed idea
+    url: https://github.com/Talos-Assistants/community/discussions/categories/ideas
+    about: Not sure what you want yet? Ideas is for arguing it into shape. Use the feature request template once it is specific.
+  - name: Read the guide
+    url: https://talosassistants.com/docs
+    about: A plain-language tour of what Talos does. It is not a configuration reference, and there is not one yet, so configuration questions belong in Q&A.
+  - name: Send feedback privately
+    url: https://talosassistants.com/feedback
+    about: Goes straight to us, needs no account, and is not visible to anyone else.
+  - name: Report a security vulnerability
+    url: https://github.com/Talos-Assistants/community/security/advisories/new
+    about: Never open a public issue for a vulnerability. Report it privately here.

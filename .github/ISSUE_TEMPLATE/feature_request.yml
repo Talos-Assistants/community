@@ -1,0 +1,66 @@
+name: Feature request
+description: A specific thing Talos should be able to do, that it cannot do today.
+title: "[feature] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is for a **specific, describable** capability.
+
+        If it is still half an idea ("something around X would be good"), start it in
+        [Discussions → Ideas](https://github.com/Talos-Assistants/community/discussions/categories/ideas)
+        instead. It will get argued into a better shape there, and an idea nobody can picture yet does
+        not benefit from sitting in a tracker.
+
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched the existing issues and discussions for this.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you actually trying to do
+      description: >
+        The situation, not the solution. This is the more useful half. There is often a way to get you
+        there that nobody would have thought to ask for.
+      placeholder: "I want to ... but right now I have to ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like it to do
+      validations:
+        required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part it belongs to
+      options:
+        - Talos Brain (the self-hosted service)
+        - Talos Studio (desktop app)
+        - CLI
+        - An integration or client
+        - Account / licence / downloads (the hub)
+        - The website
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you are doing instead today
+      description: Workarounds, other tools, or nothing at all.
+
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else

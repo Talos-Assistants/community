@@ -1,0 +1,119 @@
+name: Bug report
+description: Something is broken, or does not do what it says it does.
+title: "[bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. The things that break on your hardware are exactly the things we
+        cannot find on ours.
+
+        **If this is a security vulnerability, stop.**
+        [Report it privately](https://github.com/Talos-Assistants/community/security/advisories/new)
+        instead. A public issue tells everyone before there is a fix to upgrade to.
+
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched the existing issues and discussions for this.
+          required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part
+      options:
+        - Talos Brain (the self-hosted service)
+        - Talos Studio (desktop app)
+        - CLI
+        - An integration or client
+        - Account / licence / downloads (the hub)
+        - The website
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you were doing, what you expected, and what happened instead.
+      placeholder: |
+        I ran ... and expected ... but instead it ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce it
+      description: >
+        The steps someone else would follow to see the same thing. If it only happens sometimes, say
+        roughly how often. "About one start in five" is genuinely useful information.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: >
+        Nothing has been released yet, so "built from source" plus the date is a perfectly good answer.
+      placeholder: "1.0.0, or: built from source, 2026-09-06"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How it is installed
+      options:
+        - Native install
+        - Docker / container image
+        - Built from source
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and architecture
+      description: >
+        Architecture matters. The published container image is x86-64 only, and ARM Linux is roadmap
+        rather than available.
+      placeholder: "Windows 11 x86-64 / Ubuntu 24.04 x86-64 / macOS 15 Apple Silicon"
+    validations:
+      required: true
+
+  - type: input
+    id: provider
+    attributes:
+      label: Model provider
+      description: Which provider the brain is pointed at, if the problem involves it at all.
+      placeholder: "Anthropic / OpenAI / a local model / not relevant"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error output
+      description: >
+        Paste the relevant part. This is rendered as a code block, so no backticks needed.
+      render: text
+
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: One last thing
+      options:
+        - label: >
+            I have checked that what I pasted contains no API keys, licence tokens, passwords or
+            personal data. This issue is public.
+          required: true
