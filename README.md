@@ -32,10 +32,10 @@ nothing needs to face the public internet.
 
 ## Before you post
 
-- **Nothing has shipped yet.** The first public release will be a **beta**, and it will appear on
-  [the changelog](https://talosassistants.com/changelog) on the day it exists. Expect rough edges
-  when it does. Telling us about them is the whole point of a beta. If you are here before that,
-  Ideas is the most useful place to be.
+- **Nothing has shipped yet.** The first public release will be a **beta, starting at 0.1.0**, and it
+  will appear on [the changelog](https://talosassistants.com/changelog) on the day it exists. Expect
+  rough edges when it does. Telling us about them is the whole point of a beta. If you are here
+  before that, Ideas is the most useful place to be.
 - **[The guide](https://talosassistants.com/docs) is a tour, not a manual.** It walks through what
   Talos Assistants does in plain language. It contains no configuration and no reference material,
   and there is no configuration reference yet. Until there is, ask in Q&A. Those answers are what a
