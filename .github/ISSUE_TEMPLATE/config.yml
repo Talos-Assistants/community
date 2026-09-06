@@ -10,7 +10,7 @@ contact_links:
     about: Not sure what you want yet? Ideas is for arguing it into shape. Use the feature request template once it is specific.
   - name: Read the guide
     url: https://talosassistants.com/docs
-    about: A plain-language tour of what Talos does. It is not a configuration reference, and there is not one yet, so configuration questions belong in Q&A.
+    about: A plain-language tour of what Talos Assistants does. It is not a configuration reference, and there is not one yet, so configuration questions belong in Q&A.
   - name: Send feedback privately
     url: https://talosassistants.com/feedback
     about: Goes straight to us, needs no account, and is not visible to anyone else.

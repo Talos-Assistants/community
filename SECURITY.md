@@ -16,7 +16,7 @@ welcome but not required. A clear description of the flaw is enough to start.
 
 ## What happens next
 
-- We aim to acknowledge a report within 3 working days. Talos is built by a very small team, so treat
+- We aim to acknowledge a report within 3 working days. Talos Assistants is built by a very small team, so treat
   that as a target rather than a contractual SLA.
 - We will tell you whether we consider it a vulnerability, and why, either way.
 - If it is one, we will agree a disclosure timeline with you. By default, details become public once a
@@ -25,7 +25,7 @@ welcome but not required. A clear description of the flaw is enough to start.
 
 ## What is in scope
 
-Anything that ships as part of Talos:
+Anything that ships as part of Talos Assistants:
 
 - **Talos Brain**, the self-hosted service, including its API and licence verification.
 - **Talos Studio** and the CLI.
